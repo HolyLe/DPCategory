@@ -3,6 +3,7 @@ UI分类，包含了分类方法和链式语法，参考借鉴了ZZFLEXDemo和YY
 
 可以通过：
 
+```
 UILabelCreate()
 .makeChain
 .addToSuperView(self.view)
@@ -16,7 +17,7 @@ UILabelCreate()
 .assignTo(^(__kindof UIView * _Nonnull view) {
 self.label = view;
 });
-
+```
 很方便的设置Label属性或其他控件属性。
 
 它可以：
