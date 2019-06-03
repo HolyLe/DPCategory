@@ -24,12 +24,10 @@ static BOOL hexStrToRGBA(NSString *str,
     }
     
     NSUInteger length = [str length];
-    //         RGB            RGBA          RRGGBB        RRGGBBAA
     if (length != 3 && length != 4 && length != 6 && length != 8) {
         return NO;
     }
     
-    //RGB,RGBA,RRGGBB,RRGGBBAA
     if (length < 5) {
         *r = hexStrToInt([str substringWithRange:NSMakeRange(0, 1)]) / 255.0f;
         *g = hexStrToInt([str substringWithRange:NSMakeRange(1, 1)]) / 255.0f;

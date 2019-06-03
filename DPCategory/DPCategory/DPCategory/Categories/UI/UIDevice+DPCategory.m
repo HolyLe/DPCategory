@@ -48,11 +48,7 @@
 }
 
 - (BOOL)isJailbroken{
-    if ([self isSimulator]) return NO; // Dont't check simulator
-    
-    // iOS9 URL Scheme query changed ...
-    // NSURL *cydiaURL = [NSURL URLWithString:@"cydia://package"];
-    // if ([[UIApplication sharedApplication] canOpenURL:cydiaURL]) return YES;
+    if ([self isSimulator]) return NO; 
     
     NSArray *paths = @[@"/Applications/Cydia.app",
                        @"/private/var/lib/apt/",

@@ -56,7 +56,7 @@ static inline void dispatch_async_on_main_queue(void (^block)(void)) {
     Class naVi = [UINavigationController class];
     Class tabbarClass = [UITabBarController class];
     BOOL isNavClass = [vc isKindOfClass:naVi];
-    BOOL isTabbarClass;
+    BOOL isTabbarClass = NO;
     if (!isNavClass) {
         isTabbarClass = [vc isKindOfClass:tabbarClass];
     }
@@ -115,9 +115,9 @@ static inline void dispatch_async_on_main_queue(void (^block)(void)) {
 }
 
 - (BOOL)isPirated {
-    if ([[UIDevice currentDevice] isSimulator]) return YES; // Simulator is not from appstore
+    if ([[UIDevice currentDevice] isSimulator]) return YES;
     
-    if (getgid() <= 10) return YES; // process ID shouldn't be root
+    if (getgid() <= 10) return YES;
     
     if ([[[NSBundle mainBundle] infoDictionary] objectForKey:@"SignerIdentity"]) {
         return YES;
@@ -130,9 +130,6 @@ static inline void dispatch_async_on_main_queue(void (^block)(void)) {
     if (![self _DP_fileExistInMainBundle:@"SC_Info"]) {
         return YES;
     }
-    
-    //if someone really want to crack your app, this method is useless..
-    //you may change this method's name, encrypt the code and do more check..
     return NO;
 }
 

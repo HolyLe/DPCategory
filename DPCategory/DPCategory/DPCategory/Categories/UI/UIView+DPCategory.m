@@ -281,7 +281,6 @@
     UIBezierPath *bezierPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corner cornerRadii:size];
     CAShapeLayer *layer = [CAShapeLayer layer];
     layer.path = bezierPath.CGPath;
-    //    [self.layer addSublayer:layer];
     return layer;
 }
 
