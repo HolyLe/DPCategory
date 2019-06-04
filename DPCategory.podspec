@@ -31,11 +31,12 @@ Pod::Spec.new do |s|
 
   s.subspec 'Categories' do |ss|
     ss.framework  = "UIKit","ImageIO","WebKit","QuartzCore"
+     ss.public_header_files = 'DPCategory/DPCategory/Categories/DPDefine.h'
     ss.source_files = 'DPCategory/DPCategory/Categories/**/*.{h,m}'
   end
 
   s.subspec 'DPChain' do |ss|
-    ss.public_header_files = 'DPCategory/DPCategory/Categories/DPDefine.h'
+    
     ss.source_files = 'DPCategory/DPCategory/DPChain/**/*.{h,m}'
     ss.dependency 'DPCategory/Categories'
   end
