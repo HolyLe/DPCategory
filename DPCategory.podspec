@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "DPCategory/DPCategory/**/*.{h,m}"
 
-  s.framework  = "UIKit,ImageIO,WebKit,QuartzCore"
+  s.framework  = "UIKit","ImageIO","WebKit","QuartzCore"
 
 
 end
