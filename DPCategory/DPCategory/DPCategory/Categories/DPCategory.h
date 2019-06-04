@@ -46,8 +46,4 @@
 #import "Masonry.h"
 #endif
 
-#if __has_include("ReactiveObjC.h")
-#import "ReactiveObjC.h"
-
-#endif
 #endif /* DPCategory_h */
