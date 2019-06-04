@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DPCategory.h"
+#import "NSFileManager+DPCategory.h"
 @interface ViewController ()
 @property (nonatomic, strong) UILabel * label;
 @end
@@ -29,7 +30,7 @@
     .assignTo(^(__kindof UIView * _Nonnull view) {
         self.label = view;
     });
-;
+
     // Do any additional setup after loading the view.
 }
 
