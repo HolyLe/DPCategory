@@ -295,14 +295,6 @@
 		73DEAB6D22A539D3003F406B /* DPChain */ = {
 			isa = PBXGroup;
 			children = (
-				73DEAB6F22A539D3003F406B /* DPChain */,
-			);
-			path = DPChain;
-			sourceTree = "<group>";
-		};
-		73DEAB6F22A539D3003F406B /* DPChain */ = {
-			isa = PBXGroup;
-			children = (
 				73DEAB7022A539D3003F406B /* UIView */,
 				73DEABA322A539D3003F406B /* CALayer */,
 				73DEABBB22A539D3003F406B /* UIGesture */,
