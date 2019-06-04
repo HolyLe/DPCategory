@@ -285,6 +285,7 @@
 		73DEAB6822A539D3003F406B /* DPCategory */ = {
 			isa = PBXGroup;
 			children = (
+				73DEAC0222A539D3003F406B /* DPCategory.h */,
 				73DEAB6D22A539D3003F406B /* DPChain */,
 				73DEABCB22A539D3003F406B /* Categories */,
 			);
@@ -424,7 +425,6 @@
 			children = (
 				73DEABCC22A539D3003F406B /* UI */,
 				73DEABEF22A539D3003F406B /* Foundation */,
-				73DEAC0222A539D3003F406B /* DPCategory.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
