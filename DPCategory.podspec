@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.name         = "DPCategory"
   s.version      = "0.0.1"
-  s.summary      = "面向对象的网络编程框架"
+  s.summary      = "链式UI创建与分类集合"
 
 
 
@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
    s.source       = { :git => "https://github.com/HolyLe/DPCategory.git", :tag =>          s.version.to_s } 
 
 
-  s.source_files  = "DPCategory/DPCategory/DPCategory/**/*.{h,m}"
+  s.source_files  = "DPCategory/DPCategory/**/*.{h,m}"
 
-  s.framework  = "UIKit,ImageIO,WebKit,QuartzCore,Accelerate"
+  s.framework  = "UIKit,ImageIO,WebKit,QuartzCore"
 
 
 end
