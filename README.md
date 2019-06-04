@@ -26,6 +26,8 @@ self.label = view;
 2. 链式风格，可以清楚的了解到控件设置到加载的全过程，方便复制和修改，更快的创建UI。
 3. 控件由单独model执行设置方法，非常安全。
 
+[iOS OC项目优化之路（一）之UIKit篇](https://www.jianshu.com/p/7c64ab931dc7)
+
 已支持cocopods,
 
 pod 'DPCategory'
