@@ -295,7 +295,6 @@
 		73DEAB6D22A539D3003F406B /* DPChain */ = {
 			isa = PBXGroup;
 			children = (
-				73DEAB6E22A539D3003F406B /* DPDefine.h */,
 				73DEAB6F22A539D3003F406B /* DPChain */,
 			);
 			path = DPChain;
@@ -423,6 +422,7 @@
 		73DEABCB22A539D3003F406B /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				73DEAB6E22A539D3003F406B /* DPDefine.h */,
 				73DEABCC22A539D3003F406B /* UI */,
 				73DEABEF22A539D3003F406B /* Foundation */,
 			);
