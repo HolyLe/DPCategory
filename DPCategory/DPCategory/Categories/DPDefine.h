@@ -57,9 +57,6 @@ static inline BOOL DPIsZeroClassBlank(id data, Class clas){
 }
 
 
-static inline CGFloat DPDegreesToRadians(CGFloat degrees) {
-    return degrees * M_PI / 180;
-}
 
 /// Convert radians to degrees.
 static inline CGFloat DPRadiansToDegrees(CGFloat radians) {
@@ -100,8 +97,6 @@ static inline CGFloat DPRadiansToDegrees(CGFloat radians) {
 #define DPWEAK  __weak typeof(self)weakSelf = self;
 #define DPSTRONG  __strong typeof(weakSelf)self = weakSelf;
 
-#ifndef DP_SWAP // swap two value
-#define DP_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
-#endif
+
 
 #endif /* DPDefine_h */

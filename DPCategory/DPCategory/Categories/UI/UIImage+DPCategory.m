@@ -9,7 +9,12 @@
 #import "UIImage+DPCategory.h"
 #import <ImageIO/ImageIO.h>
 #import <Accelerate/Accelerate.h>
-#import "DPDefine.h"
+static inline CGFloat DPDegreesToRadians(CGFloat degrees) {
+    return degrees * M_PI / 180;
+}
+#ifndef DP_SWAP // swap two value
+#define DP_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
+#endif
 @implementation UIImage (DPCategory)
 static NSTimeInterval _dp_CGImageSourceGetGIFFrameDelayAtIndex(CGImageSourceRef source, size_t index) {
     NSTimeInterval delay = 0;
