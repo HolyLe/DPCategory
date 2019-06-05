@@ -28,5 +28,5 @@
 #import "DPVisualEffectViewChainModel.h"
 #import "DPSliderViewChainModel.h"
 #import "DPSegmentedControlChainModel.h"
-
+#import "DPBaseViewChainModel+Masonry.h"
 #endif /* DPViewChainHeader_h */

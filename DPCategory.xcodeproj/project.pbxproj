@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733A5CC222A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 733A5CC122A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.m */; };
 		73DEA99A22A537CC003F406B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DEA99922A537CC003F406B /* AppDelegate.m */; };
 		73DEA99D22A537CC003F406B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73DEA99C22A537CC003F406B /* ViewController.m */; };
 		73DEA9A022A537CC003F406B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DEA99E22A537CC003F406B /* Main.storyboard */; };
@@ -84,6 +85,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		733A5CC022A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DPBaseViewChainModel+Masonry.h"; sourceTree = "<group>"; };
+		733A5CC122A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DPBaseViewChainModel+Masonry.m"; sourceTree = "<group>"; };
 		73DEA99522A537CC003F406B /* DPCategory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DPCategory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DEA99822A537CC003F406B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		73DEA99922A537CC003F406B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -311,6 +314,8 @@
 				73DEAB7122A539D3003F406B /* UIView+DPChain.m */,
 				73DEAB8822A539D3003F406B /* DPBaseViewChainModel.h */,
 				73DEABA122A539D3003F406B /* DPBaseViewChainModel.m */,
+				733A5CC022A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.h */,
+				733A5CC122A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.m */,
 				73DEAB8D22A539D3003F406B /* DPBaseControlChainModel.h */,
 				73DEAB7422A539D3003F406B /* DPBaseControlChainModel.m */,
 				73DEAB7722A539D3003F406B /* DPBaseScrollViewChainModel.h */,
@@ -584,6 +589,7 @@
 				73DEAC2022A539D4003F406B /* DPLayerChainModel.m in Sources */,
 				73DEAC2622A539D4003F406B /* DPGradientLayerChainModel.m in Sources */,
 				73DEAC3422A539D4003F406B /* UIColor+DPCategory.m in Sources */,
+				733A5CC222A77AB2008ABE8B /* DPBaseViewChainModel+Masonry.m in Sources */,
 				73DEAC4522A539D4003F406B /* NSNumber+DPCategory.m in Sources */,
 				73DEAC0522A539D3003F406B /* DPSliderViewChainModel.m in Sources */,
 				73DEAC1B22A539D4003F406B /* DPTextFieldChainModel.m in Sources */,

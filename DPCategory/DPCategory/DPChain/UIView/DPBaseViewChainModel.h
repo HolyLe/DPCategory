@@ -8,11 +8,6 @@
 
 #import "DPChainDefine.h"
 
-#if __has_include(<Masonry.h>)
-#import <Masonry.h>
-#elif __has_include("Masonry.h")
-#import "Masonry.h"
-#endif
 
 #define DPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(DPMethod,DPParaType, DPModelType, DPPropertyClass) DPCATEGORY_CHAIN_IMPLEMENTATION(DPMethod,DPParaType, view, DPModelType, DPPropertyClass)
 
@@ -23,9 +18,8 @@
 }\
 @end
 NS_ASSUME_NONNULL_BEGIN
-@class MASConstraintMaker;
 
-typedef void(^DPMasonryLoad)(MASConstraintMaker *make);
+
 typedef void(^DPAssignViewLoad)(__kindof UIView *view);
 @interface DPBaseViewChainModel <__covariant  ObjectType> : NSObject
 
@@ -182,11 +176,7 @@ DPCATEGORY_CHAIN_PROPERTY ObjectType (^ shadowPath) (CGPathRef shadowPath);
 
 #pragma mark - method -
 
-DPCATEGORY_CHAIN_PROPERTY ObjectType (^ makeMasonry)(DPMasonryLoad constraints);
 
-DPCATEGORY_CHAIN_PROPERTY ObjectType (^ updateMasonry)(DPMasonryLoad constraints);
-
-DPCATEGORY_CHAIN_PROPERTY ObjectType (^ remakeMasonry)(DPMasonryLoad constraints);
 
 DPCATEGORY_CHAIN_PROPERTY ObjectType (^ assignTo)(DPAssignViewLoad assignTo);
 

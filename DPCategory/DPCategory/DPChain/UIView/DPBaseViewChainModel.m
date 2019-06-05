@@ -10,27 +10,6 @@
 #import "UIView+DPCategory.h"
 #import <objc/runtime.h>
 
-
-
-#define     DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION(methodName, masonryMethod) \
-- (id (^)( void (^constraints)(MASConstraintMaker *)) )methodName    \
-{   \
-    return ^id ( void (^constraints)(MASConstraintMaker *) ) {  \
-        if (self.view.superview) { \
-            [self.view masonryMethod:constraints];    \
-        }   \
-        return self;    \
-    };  \
-}
-
-#define     DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION_NULL(methodName, masonryMethod) \
-- (id (^)( void (^constraints)(MASConstraintMaker *)) )methodName    \
-{   \
-    return ^id ( void (^constraints)(MASConstraintMaker *) ) {  \
-        return self;    \
-    };  \
-}
-
 #define DPCATEGORY_CHAIN_VIEW_IMPLEMENTATION(DPMethod,DPParaType) DPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(DPMethod,DPParaType, id,UIView)
 
 
@@ -366,17 +345,6 @@ DPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(rasterizationScale, CGFloat);
 DPCATEGORY_CHAIN_LAYER_IMPLEMENTATION(shadowPath, CGPathRef);
 
 
-
-#if __has_include(<Masonry.h>) || __has_include("Masonry.h")
-DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION(makeMasonry, mas_makeConstraints);
-DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION(updateMasonry, mas_updateConstraints);
-DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION(remakeMasonry, mas_remakeConstraints);
-#else
-DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION_NULL(masonry, mas_makeConstraints);
-DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION_NULL(updateMasonry, mas_updateConstraints);
-DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION_NULL(remakeMasonry, mas_remakeConstraints);
-#endif
-
 - (id  _Nonnull (^)(CATransform3D))layerTransform{
     return ^ (CATransform3D ta){
         self.view.layer.transform = ta;
@@ -450,6 +418,6 @@ DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION_NULL(remakeMasonry, mas_remakeConstraint
 
 @end
 #undef DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION
-#undef DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION_NULL
+
 #undef DPCATEGORY_CHAIN_LAYER_IMPLEMENTATION
 #undef DPCATEGORY_CHAIN_VIEW_IMPLEMENTATION
