@@ -37,10 +37,6 @@
 #import "UIViewController+DPCategory.h"
 #import "NSFileManager+DPCategory.h"
 #import "UIFont+DPCategory.h"
-#if __has_include("UIImageView+WebCache.h")
-#import "UIImageView+WebCache.h"
-#endif
-
 #if __has_include(<Masonry.h>)
 #import <Masonry.h>
 #elif __has_include("Masonry.h")

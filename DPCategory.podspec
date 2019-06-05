@@ -37,11 +37,10 @@ Pod::Spec.new do |s|
 
   s.subspec 'DPChain' do |chain|
     chain.dependency 'DPCategory/Categories'
-    chain.dependency 'Masonry'
     chain.source_files = 'DPCategory/DPCategory/DPChain/**/*.{h,m}'
-
   end
-    
+  
+  s.dependency 'Masonry'
 
 
 end

@@ -22,11 +22,11 @@
     .addToSuperView(self.view)
     .backgroundColor([UIColor grayColor])
     //如果项目导入masonry的话
-    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
+//    .makeMasonry(^(MASConstraintMaker * _Nonnull make) {
 //        make.top.mas_offset(16);
 //        make.centerX.equalTo(self.contentView);
 //        make.width.height.mas_equalTo(100);
-    })
+//    })
     .assignTo(^(__kindof UIView * _Nonnull view) {
         self.label = view;
     });
