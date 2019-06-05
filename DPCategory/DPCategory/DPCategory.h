@@ -35,6 +35,7 @@
 #import "DPDefine.h"
 #import "UIView+DPChain.h"
 #import "UIViewController+DPCategory.h"
+#import "NSFileManager+DPCategory.h"
 #import "UIFont+DPCategory.h"
 #if __has_include("UIImageView+WebCache.h")
 #import "UIImageView+WebCache.h"
