@@ -10,11 +10,7 @@
 #import "UIView+DPCategory.h"
 #import <objc/runtime.h>
 
-#if __has_include(<Masonry.h>)
-#import <Masonry.h>
-#elif __has_include("Masonry.h")
-#import "Masonry.h"
-#endif
+
 
 #define     DPCATEGORY_CHAIN_MASONRY_IMPLEMENTATION(methodName, masonryMethod) \
 - (id (^)( void (^constraints)(MASConstraintMaker *)) )methodName    \

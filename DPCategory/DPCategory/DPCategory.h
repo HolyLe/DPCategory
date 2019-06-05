@@ -37,10 +37,5 @@
 #import "UIViewController+DPCategory.h"
 #import "NSFileManager+DPCategory.h"
 #import "UIFont+DPCategory.h"
-#if __has_include(<Masonry.h>)
-#import <Masonry.h>
-#elif __has_include("Masonry.h")
-#import "Masonry.h"
-#endif
 
 #endif /* DPCategory_h */

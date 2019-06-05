@@ -8,6 +8,12 @@
 
 #import "DPChainDefine.h"
 
+#if __has_include(<Masonry.h>)
+#import <Masonry.h>
+#elif __has_include("Masonry.h")
+#import "Masonry.h"
+#endif
+
 #define DPCATEGORY_CHAIN_VIEWCLASS_IMPLEMENTATION(DPMethod,DPParaType, DPModelType, DPPropertyClass) DPCATEGORY_CHAIN_IMPLEMENTATION(DPMethod,DPParaType, view, DPModelType, DPPropertyClass)
 
 #define DPCATEGORY_VIEW_IMPLEMENTATION(DPClass, modelType)\
