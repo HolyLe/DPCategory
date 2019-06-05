@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
  
 
    s.name         = "DPCategory"
-   s.version      = "0.0.3"
+   s.version      = "0.0.4"
    s.summary      = "链式UI创建与分类集合"
 
  
